@@ -33,9 +33,9 @@ Requires `XCode 7` or higher, `iOS 8.0` and above. Built using `ARC`.
   * `-lsqlite3.0` 
   * `-lxml2`
 
-* Add `Bridging-Header` to your project by performing `XCode`->`New File`->`Header File`.
+* Add `Bridging_Header` to your project by performing `XCode`->`New File`->`Header File`.
 
-* Import `MobileBridge.h` in newly created header `Bridging-Header` file:
+* Import `MobileBridge.h` in newly created header `Bridging_Header` file:
 <p align="center">
 <img align="center" src="images/import_mobile_bridge_header.png" alt="Import MobileBridge header">
 </p>
@@ -45,7 +45,7 @@ Requires `XCode 7` or higher, `iOS 8.0` and above. Built using `ARC`.
 <img align="center" src="images/set_path_to_bridging_header.png" alt="Set path to Bridging header">
 </p>
 
-Clean&Compile `XCode` project, you would be able start using `MobileBridge` framework in your project.
+`Clean` and `compile`, you would be able start using `MobileBridge` framework in your project.
 
 ## Sample project ##
 
