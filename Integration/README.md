@@ -1,15 +1,15 @@
 # MobileBridge Integration in Swift Project #
 
 **Note**: this page assumes you have already downloaded `MobileBridge` framework and `AWS-iOS-SDK`.
-
 ## Requirements ##
 
 A `Client-Key` and `Client-Secret` are required to use the `MobileBridge` framework.
+
 Requires `XCode 7` or higher, `iOS 8.0` and above. Built using `ARC`.
 
 ## Integration ##
 
-* Add `MobileBridge.framework`, `MobileBridge.bundle` and `aws-ios-sdk-xxx` to your project.
+* Add `MobileBridge.framework`, `MobileBridge.bundle` and `AWS-iOS-SDK-xxx` to your project.
 * Make sure following frameworks are added in `Xcode` project's `Build Phases`:
   * `MessageUI.framework` 
   * `CoreMedia.framework`
@@ -33,10 +33,9 @@ Requires `XCode 7` or higher, `iOS 8.0` and above. Built using `ARC`.
   * `-lsqlite3.0` 
   * `-lxml2`
 
-* Add `Bridging-Header` to your project:
-Add new `header` file by performing `XCode`->`New File`->`Header File`.
+* Add `Bridging-Header` to your project by performing `XCode`->`New File`->`Header File`.
 
-* Import `MobileBridge.h` in newly created header file:
+* Import `MobileBridge.h` in newly created header `Bridging-Header` file:
 <p align="center">
 <img align="center" src="images/import_mobile_bridge_header.png" alt="Import MobileBridge header">
 </p>
