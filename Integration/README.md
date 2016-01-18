@@ -37,12 +37,12 @@ Requires `XCode 7` or higher, `iOS 8.0` and above. Built using `ARC`.
 
 * Import `MobileBridge.h` in newly created header `Bridging_Header` file:
 <p align="center">
-<img align="center" src="images/import_mobile_bridge_header.png" alt="Import MobileBridge header">
+<img align="center" src="images/import_mobile_bridge_header_.png" alt="Import MobileBridge header">
 </p>
 
 * Set path to `Bridging-Header.h` under `Swift-Compiler - Code Generation` section in `Xcode` project's `Build Settings`:
 <p align="center">
-<img align="center" src="images/set_path_to_bridging_header.png" alt="Set path to Bridging header">
+<img align="center" src="images/set_path_to_bridging_header_.png" alt="Set path to Bridging header">
 </p>
 
 `Clean` and `compile`, you would be able start using `MobileBridge` framework in your project.
