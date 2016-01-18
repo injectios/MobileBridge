@@ -1,0 +1,1003 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AWSIoT.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AWSIoT</TokenIdentifier>
+			<Abstract type="html">&lt;fullname&gt;AWS IoT (Beta)&lt;/fullname&gt;&lt;p&gt;&lt;b&gt;AWS IoT is in beta and is subject to change&lt;/b&gt;&lt;/p&gt;&lt;p&gt;AWS IoT provides secure, bi-directional communication between Internet-connected things (such as sensors, actuators, embedded devices, or smart appliances) and the AWS cloud. You can discover your custom IoT-Data endpoint to communicate with, configure rules for data processing and integration with other services, organize resources associated with each thing (Thing Registry), configure logging, and create and manage policies and credentials to authenticate things.&lt;/p&gt;&lt;p&gt;For more information about how AWS IoT works, see the Developer Guide.&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSIoTService.h</DeclaredIn>
+            
+			
+			<NodeRef refid="730"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSIoT/setConfiguration:</TokenIdentifier>
+			<Abstract type="html">The service configuration used to instantiate this service client.</Abstract>
+			<DeclaredIn>AWSIoTService.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) AWSServiceConfiguration *configuration</Declaration>
+			
+			
+			<Anchor>//api/name/configuration</Anchor>
+            <NodeRef refid="730"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSIoT/configuration</TokenIdentifier>
+			<Abstract type="html">The service configuration used to instantiate this service client.</Abstract>
+			<DeclaredIn>AWSIoTService.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) AWSServiceConfiguration *configuration</Declaration>
+			
+			
+			<Anchor>//api/name/configuration</Anchor>
+            <NodeRef refid="730"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AWSIoT/configuration</TokenIdentifier>
+			<Abstract type="html">The service configuration used to instantiate this service client.</Abstract>
+			<DeclaredIn>AWSIoTService.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) AWSServiceConfiguration *configuration</Declaration>
+			
+			
+			<Anchor>//api/name/configuration</Anchor>
+            <NodeRef refid="730"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/AWSIoT/defaultIoT</TokenIdentifier>
+			<Abstract type="html">Returns the singleton service client. If the singleton object does not exist, the SDK instantiates the default service client with defaultServiceConfiguration from [AWSServiceManager defaultServiceManager]. The reference to this object is maintained by the SDK, and you do not need to retain it manually.</Abstract>
+			<DeclaredIn>AWSIoTService.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)defaultIoT</Declaration>
+			
+			<ReturnValue><Abstract type="html">The default service client.</Abstract></ReturnValue>
+			<Anchor>//api/name/defaultIoT</Anchor>
+            <NodeRef refid="730"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/AWSIoT/registerIoTWithConfiguration:forKey:</TokenIdentifier>
+			<Abstract type="html">Creates a service client with the given service configuration and registers it for the key.</Abstract>
+			<DeclaredIn>AWSIoTService.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)registerIoTWithConfiguration:(AWSServiceConfiguration *)configuration forKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>configuration</Name>
+					<Abstract type="html">A service configuration object.</Abstract>
+				</Parameter><Parameter>
+					<Name>key</Name>
+					<Abstract type="html">A string to identify the service client.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/registerIoTWithConfiguration:forKey:</Anchor>
+            <NodeRef refid="730"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/AWSIoT/IoTForKey:</TokenIdentifier>
+			<Abstract type="html">Retrieves the service client associated with the key. You need to call + registerIoTWithConfiguration:forKey: before invoking this method. If + registerIoTWithConfiguration:forKey: has not been called in advance or the key does not exist, this method returns nil.</Abstract>
+			<DeclaredIn>AWSIoTService.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)IoTForKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">A string to identify the service client.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An instance of the service client.</Abstract></ReturnValue>
+			<Anchor>//api/name/IoTForKey:</Anchor>
+            <NodeRef refid="730"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/AWSIoT/removeIoTForKey:</TokenIdentifier>
+			<Abstract type="html">Removes the service client associated with the key and release it.</Abstract>
+			<DeclaredIn>AWSIoTService.h</DeclaredIn>
+			
+			<Declaration>+ (void)removeIoTForKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">A string to identify the service client.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeIoTForKey:</Anchor>
+            <NodeRef refid="730"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSIoT/acceptCertificateTransfer:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Accepts a pending certificate transfer. The default state of the certificate is INACTIVE.&lt;/p&gt;&lt;p&gt;To check for pending certificate transfers, call &lt;a&gt;ListCertificates&lt;/a&gt; to enumerate your certificates.&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSIoTService.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTAcceptCertificateTransferRequest</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (AWSTask *)acceptCertificateTransfer:(AWSIoTAcceptCertificateTransferRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">A container for the necessary parameters to execute the AcceptCertificateTransfer service method.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An instance of AWSTask. On successful execution, task.result will be nil. On failed execution, task.error may contain an NSError with AWSIoTErrorDomain domain and the following error code: AWSIoTErrorResourceNotFound, AWSIoTErrorTransferAlreadyCompleted, AWSIoTErrorInvalidRequest, AWSIoTErrorThrottling, AWSIoTErrorUnauthorized, AWSIoTErrorServiceUnavailable, AWSIoTErrorInternalFailure.</Abstract></ReturnValue>
+			<Anchor>//api/name/acceptCertificateTransfer:</Anchor>
+            <NodeRef refid="730"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSIoT/attachPrincipalPolicy:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Attaches the specified policy to the specified principal (certificate or other credential).&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSIoTService.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTAttachPrincipalPolicyRequest</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (AWSTask *)attachPrincipalPolicy:(AWSIoTAttachPrincipalPolicyRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">A container for the necessary parameters to execute the AttachPrincipalPolicy service method.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An instance of AWSTask. On successful execution, task.result will be nil. On failed execution, task.error may contain an NSError with AWSIoTErrorDomain domain and the following error code: AWSIoTErrorResourceNotFound, AWSIoTErrorInvalidRequest, AWSIoTErrorThrottling, AWSIoTErrorUnauthorized, AWSIoTErrorServiceUnavailable, AWSIoTErrorInternalFailure, AWSIoTErrorLimitExceeded.</Abstract></ReturnValue>
+			<Anchor>//api/name/attachPrincipalPolicy:</Anchor>
+            <NodeRef refid="730"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSIoT/attachThingPrincipal:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Attaches the specified principal to the specified thing.&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSIoTService.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTAttachThingPrincipalRequest</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTAttachThingPrincipalResponse</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (AWSTask *)attachThingPrincipal:(AWSIoTAttachThingPrincipalRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">A container for the necessary parameters to execute the AttachThingPrincipal service method.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An instance of AWSTask. On successful execution, task.result will contain an instance of AWSIoTAttachThingPrincipalResponse. On failed execution, task.error may contain an NSError with AWSIoTErrorDomain domain and the following error code: AWSIoTErrorResourceNotFound, AWSIoTErrorInvalidRequest, AWSIoTErrorThrottling, AWSIoTErrorUnauthorized, AWSIoTErrorServiceUnavailable, AWSIoTErrorInternalFailure.</Abstract></ReturnValue>
+			<Anchor>//api/name/attachThingPrincipal:</Anchor>
+            <NodeRef refid="730"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSIoT/cancelCertificateTransfer:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Cancels a pending transfer for the specified certificate.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Note&lt;/b&gt; Only the transfer source account can use this operation to cancel a transfer (transfer destinations can use &lt;a&gt;RejectCertificateTransfer&lt;/a&gt; instead). After transfer, AWS IoT returns the certificate to the source account in the INACTIVE state. Once the destination account has accepted the transfer, the transfer may no longer be cancelled.&lt;/p&gt;&lt;p&gt;After a certificate transfer is cancelled, the status of the certificate changes from PENDING_TRANSFER to INACTIVE.&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSIoTService.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTCancelCertificateTransferRequest</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (AWSTask *)cancelCertificateTransfer:(AWSIoTCancelCertificateTransferRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">A container for the necessary parameters to execute the CancelCertificateTransfer service method.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An instance of AWSTask. On successful execution, task.result will be nil. On failed execution, task.error may contain an NSError with AWSIoTErrorDomain domain and the following error code: AWSIoTErrorResourceNotFound, AWSIoTErrorTransferAlreadyCompleted, AWSIoTErrorInvalidRequest, AWSIoTErrorThrottling, AWSIoTErrorUnauthorized, AWSIoTErrorServiceUnavailable, AWSIoTErrorInternalFailure.</Abstract></ReturnValue>
+			<Anchor>//api/name/cancelCertificateTransfer:</Anchor>
+            <NodeRef refid="730"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSIoT/createCertificateFromCsr:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Creates an X.509 certificate using the specified certificate signing request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Note&lt;/b&gt; Reusing the same certificate signing request (CSR) results in a distinct certificate.&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSIoTService.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTCreateCertificateFromCsrRequest</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTCreateCertificateFromCsrResponse</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (AWSTask *)createCertificateFromCsr:(AWSIoTCreateCertificateFromCsrRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">A container for the necessary parameters to execute the CreateCertificateFromCsr service method.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An instance of AWSTask. On successful execution, task.result will contain an instance of AWSIoTCreateCertificateFromCsrResponse. On failed execution, task.error may contain an NSError with AWSIoTErrorDomain domain and the following error code: AWSIoTErrorInvalidRequest, AWSIoTErrorThrottling, AWSIoTErrorUnauthorized, AWSIoTErrorServiceUnavailable, AWSIoTErrorInternalFailure.</Abstract></ReturnValue>
+			<Anchor>//api/name/createCertificateFromCsr:</Anchor>
+            <NodeRef refid="730"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSIoT/createKeysAndCertificate:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Creates a 2048 bit RSA key pair and issues an X.509 certificate using the issued public key.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Note&lt;/b&gt; This is the only time AWS IoT issues the private key for this certificate. It is important to keep track of the private key.&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSIoTService.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTCreateKeysAndCertificateRequest</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTCreateKeysAndCertificateResponse</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (AWSTask *)createKeysAndCertificate:(AWSIoTCreateKeysAndCertificateRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">A container for the necessary parameters to execute the CreateKeysAndCertificate service method.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An instance of AWSTask. On successful execution, task.result will contain an instance of AWSIoTCreateKeysAndCertificateResponse. On failed execution, task.error may contain an NSError with AWSIoTErrorDomain domain and the following error code: AWSIoTErrorInvalidRequest, AWSIoTErrorThrottling, AWSIoTErrorUnauthorized, AWSIoTErrorServiceUnavailable, AWSIoTErrorInternalFailure.</Abstract></ReturnValue>
+			<Anchor>//api/name/createKeysAndCertificate:</Anchor>
+            <NodeRef refid="730"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSIoT/createPolicy:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Creates an AWS IoT policy.&lt;/p&gt;&lt;p&gt;The created policy is the default version for the policy. This operation creates a policy version with a version identifier of &lt;b&gt;1&lt;/b&gt; and sets &lt;b&gt;1&lt;/b&gt; as the policy&apos;s default version.&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSIoTService.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTCreatePolicyRequest</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTCreatePolicyResponse</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (AWSTask *)createPolicy:(AWSIoTCreatePolicyRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">A container for the necessary parameters to execute the CreatePolicy service method.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An instance of AWSTask. On successful execution, task.result will contain an instance of AWSIoTCreatePolicyResponse. On failed execution, task.error may contain an NSError with AWSIoTErrorDomain domain and the following error code: AWSIoTErrorResourceAlreadyExists, AWSIoTErrorMalformedPolicy, AWSIoTErrorInvalidRequest, AWSIoTErrorThrottling, AWSIoTErrorUnauthorized, AWSIoTErrorServiceUnavailable, AWSIoTErrorInternalFailure.</Abstract></ReturnValue>
+			<Anchor>//api/name/createPolicy:</Anchor>
+            <NodeRef refid="730"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSIoT/createPolicyVersion:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Creates a new version of the specified AWS IoT policy.&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSIoTService.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTCreatePolicyVersionRequest</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTCreatePolicyVersionResponse</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (AWSTask *)createPolicyVersion:(AWSIoTCreatePolicyVersionRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">A container for the necessary parameters to execute the CreatePolicyVersion service method.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An instance of AWSTask. On successful execution, task.result will contain an instance of AWSIoTCreatePolicyVersionResponse. On failed execution, task.error may contain an NSError with AWSIoTErrorDomain domain and the following error code: AWSIoTErrorResourceNotFound, AWSIoTErrorMalformedPolicy, AWSIoTErrorVersionsLimitExceeded, AWSIoTErrorInvalidRequest, AWSIoTErrorThrottling, AWSIoTErrorUnauthorized, AWSIoTErrorServiceUnavailable, AWSIoTErrorInternalFailure.</Abstract></ReturnValue>
+			<Anchor>//api/name/createPolicyVersion:</Anchor>
+            <NodeRef refid="730"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSIoT/createThing:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Creates a thing in the thing registry.&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSIoTService.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTCreateThingRequest</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTCreateThingResponse</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (AWSTask *)createThing:(AWSIoTCreateThingRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">A container for the necessary parameters to execute the CreateThing service method.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An instance of AWSTask. On successful execution, task.result will contain an instance of AWSIoTCreateThingResponse. On failed execution, task.error may contain an NSError with AWSIoTErrorDomain domain and the following error code: AWSIoTErrorInvalidRequest, AWSIoTErrorThrottling, AWSIoTErrorUnauthorized, AWSIoTErrorServiceUnavailable, AWSIoTErrorInternalFailure, AWSIoTErrorResourceAlreadyExists.</Abstract></ReturnValue>
+			<Anchor>//api/name/createThing:</Anchor>
+            <NodeRef refid="730"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSIoT/createTopicRule:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Creates a rule.&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSIoTService.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTCreateTopicRuleRequest</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (AWSTask *)createTopicRule:(AWSIoTCreateTopicRuleRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">A container for the necessary parameters to execute the CreateTopicRule service method.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An instance of AWSTask. On successful execution, task.result will be nil. On failed execution, task.error may contain an NSError with AWSIoTErrorDomain domain and the following error code: AWSIoTErrorSqlParse, AWSIoTErrorInternal, AWSIoTErrorInvalidRequest, AWSIoTErrorResourceAlreadyExists, AWSIoTErrorServiceUnavailable.</Abstract></ReturnValue>
+			<Anchor>//api/name/createTopicRule:</Anchor>
+            <NodeRef refid="730"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSIoT/deleteCertificate:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Deletes the specified certificate.&lt;/p&gt;&lt;p&gt;A certificate cannot be deleted if it has a policy attached to it. To delete a certificate, first detach all policies using the &lt;a&gt;DetachPrincipalPolicy&lt;/a&gt; operation.&lt;/p&gt;&lt;p&gt;In addition, a certificate cannot be deleted if it is in ACTIVE status. To delete a certificate, first change the status to INACTIVE using the &lt;a&gt;UpdateCertificate&lt;/a&gt; operation.&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSIoTService.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTDeleteCertificateRequest</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (AWSTask *)deleteCertificate:(AWSIoTDeleteCertificateRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">A container for the necessary parameters to execute the DeleteCertificate service method.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An instance of AWSTask. On successful execution, task.result will be nil. On failed execution, task.error may contain an NSError with AWSIoTErrorDomain domain and the following error code: AWSIoTErrorDeleteConflict, AWSIoTErrorResourceNotFound, AWSIoTErrorCertificateState.</Abstract></ReturnValue>
+			<Anchor>//api/name/deleteCertificate:</Anchor>
+            <NodeRef refid="730"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSIoT/deletePolicy:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Deletes the specified policy.&lt;/p&gt;&lt;p&gt;A policy cannot be deleted if: &lt;/p&gt;&lt;p&gt; - it has non-default versions&lt;/p&gt;&lt;p&gt; - it is attached to any certificate&lt;/p&gt;&lt;p&gt;To delete a policy:&lt;/p&gt;&lt;p&gt; - First delete all the non-default versions of the policy using the &lt;a&gt;DeletePolicyVersion&lt;/a&gt; API.&lt;/p&gt;&lt;p&gt; - Detach it from any certificate using the &lt;a&gt;DetachPrincipalPolicy&lt;/a&gt; API.&lt;/p&gt;&lt;p&gt;When a policy is deleted, its default version is deleted with it.&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSIoTService.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTDeletePolicyRequest</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (AWSTask *)deletePolicy:(AWSIoTDeletePolicyRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">A container for the necessary parameters to execute the DeletePolicy service method.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An instance of AWSTask. On successful execution, task.result will be nil. On failed execution, task.error may contain an NSError with AWSIoTErrorDomain domain and the following error code: AWSIoTErrorDeleteConflict, AWSIoTErrorResourceNotFound, AWSIoTErrorInvalidRequest, AWSIoTErrorThrottling, AWSIoTErrorUnauthorized, AWSIoTErrorServiceUnavailable, AWSIoTErrorInternalFailure.</Abstract></ReturnValue>
+			<Anchor>//api/name/deletePolicy:</Anchor>
+            <NodeRef refid="730"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSIoT/deletePolicyVersion:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Deletes the specified version of the specified policy. The default version of the policy cannot be deleted.&lt;/p&gt;&lt;p&gt;To delete the default version use the &lt;a&gt;DeletePolicy&lt;/a&gt; API or mark the policy as non-default and then delete it.&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSIoTService.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTDeletePolicyVersionRequest</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (AWSTask *)deletePolicyVersion:(AWSIoTDeletePolicyVersionRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">A container for the necessary parameters to execute the DeletePolicyVersion service method.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An instance of AWSTask. On successful execution, task.result will be nil. On failed execution, task.error may contain an NSError with AWSIoTErrorDomain domain and the following error code: AWSIoTErrorDeleteConflict, AWSIoTErrorResourceNotFound, AWSIoTErrorInvalidRequest, AWSIoTErrorThrottling, AWSIoTErrorUnauthorized, AWSIoTErrorServiceUnavailable, AWSIoTErrorInternalFailure.</Abstract></ReturnValue>
+			<Anchor>//api/name/deletePolicyVersion:</Anchor>
+            <NodeRef refid="730"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSIoT/deleteThing:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Deletes the specified thing from the Thing Registry.&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSIoTService.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTDeleteThingRequest</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTDeleteThingResponse</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (AWSTask *)deleteThing:(AWSIoTDeleteThingRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">A container for the necessary parameters to execute the DeleteThing service method.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An instance of AWSTask. On successful execution, task.result will contain an instance of AWSIoTDeleteThingResponse. On failed execution, task.error may contain an NSError with AWSIoTErrorDomain domain and the following error code: AWSIoTErrorResourceNotFound, AWSIoTErrorInvalidRequest, AWSIoTErrorThrottling, AWSIoTErrorUnauthorized, AWSIoTErrorServiceUnavailable, AWSIoTErrorInternalFailure.</Abstract></ReturnValue>
+			<Anchor>//api/name/deleteThing:</Anchor>
+            <NodeRef refid="730"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSIoT/deleteTopicRule:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Deletes the specified rule.&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSIoTService.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTDeleteTopicRuleRequest</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (AWSTask *)deleteTopicRule:(AWSIoTDeleteTopicRuleRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">A container for the necessary parameters to execute the DeleteTopicRule service method.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An instance of AWSTask. On successful execution, task.result will be nil. On failed execution, task.error may contain an NSError with AWSIoTErrorDomain domain and the following error code: AWSIoTErrorInternal, AWSIoTErrorInvalidRequest, AWSIoTErrorServiceUnavailable, AWSIoTErrorUnauthorized.</Abstract></ReturnValue>
+			<Anchor>//api/name/deleteTopicRule:</Anchor>
+            <NodeRef refid="730"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSIoT/describeCertificate:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Gets information about the specified certificate.&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSIoTService.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTDescribeCertificateRequest</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTDescribeCertificateResponse</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (AWSTask *)describeCertificate:(AWSIoTDescribeCertificateRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">A container for the necessary parameters to execute the DescribeCertificate service method.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An instance of AWSTask. On successful execution, task.result will contain an instance of AWSIoTDescribeCertificateResponse. On failed execution, task.error may contain an NSError with AWSIoTErrorDomain domain and the following error code: AWSIoTErrorInvalidRequest, AWSIoTErrorThrottling, AWSIoTErrorUnauthorized, AWSIoTErrorServiceUnavailable, AWSIoTErrorInternalFailure, AWSIoTErrorResourceNotFound.</Abstract></ReturnValue>
+			<Anchor>//api/name/describeCertificate:</Anchor>
+            <NodeRef refid="730"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSIoT/describeEndpoint:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Returns a unique URL specific to the AWS account making the call. The URL points to the AWS IoT data plane endpoint. The customer-specific endpoint should be provided to all data plane operations.&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSIoTService.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTDescribeEndpointRequest</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTDescribeEndpointResponse</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (AWSTask *)describeEndpoint:(AWSIoTDescribeEndpointRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">A container for the necessary parameters to execute the DescribeEndpoint service method.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An instance of AWSTask. On successful execution, task.result will contain an instance of AWSIoTDescribeEndpointResponse. On failed execution, task.error may contain an NSError with AWSIoTErrorDomain domain and the following error code: AWSIoTErrorInternalFailure, AWSIoTErrorUnauthorized.</Abstract></ReturnValue>
+			<Anchor>//api/name/describeEndpoint:</Anchor>
+            <NodeRef refid="730"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSIoT/describeThing:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Gets information about the specified thing.&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSIoTService.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTDescribeThingRequest</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTDescribeThingResponse</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (AWSTask *)describeThing:(AWSIoTDescribeThingRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">A container for the necessary parameters to execute the DescribeThing service method.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An instance of AWSTask. On successful execution, task.result will contain an instance of AWSIoTDescribeThingResponse. On failed execution, task.error may contain an NSError with AWSIoTErrorDomain domain and the following error code: AWSIoTErrorResourceNotFound, AWSIoTErrorInvalidRequest, AWSIoTErrorThrottling, AWSIoTErrorUnauthorized, AWSIoTErrorServiceUnavailable, AWSIoTErrorInternalFailure.</Abstract></ReturnValue>
+			<Anchor>//api/name/describeThing:</Anchor>
+            <NodeRef refid="730"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSIoT/detachPrincipalPolicy:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Removes the specified policy from the specified certificate.&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSIoTService.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTDetachPrincipalPolicyRequest</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (AWSTask *)detachPrincipalPolicy:(AWSIoTDetachPrincipalPolicyRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">A container for the necessary parameters to execute the DetachPrincipalPolicy service method.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An instance of AWSTask. On successful execution, task.result will be nil. On failed execution, task.error may contain an NSError with AWSIoTErrorDomain domain and the following error code: AWSIoTErrorResourceNotFound, AWSIoTErrorInvalidRequest, AWSIoTErrorThrottling, AWSIoTErrorUnauthorized, AWSIoTErrorServiceUnavailable, AWSIoTErrorInternalFailure.</Abstract></ReturnValue>
+			<Anchor>//api/name/detachPrincipalPolicy:</Anchor>
+            <NodeRef refid="730"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSIoT/detachThingPrincipal:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Detaches the specified principal from the specified thing.&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSIoTService.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTDetachThingPrincipalRequest</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTDetachThingPrincipalResponse</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (AWSTask *)detachThingPrincipal:(AWSIoTDetachThingPrincipalRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">A container for the necessary parameters to execute the DetachThingPrincipal service method.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An instance of AWSTask. On successful execution, task.result will contain an instance of AWSIoTDetachThingPrincipalResponse. On failed execution, task.error may contain an NSError with AWSIoTErrorDomain domain and the following error code: AWSIoTErrorResourceNotFound, AWSIoTErrorInvalidRequest, AWSIoTErrorThrottling, AWSIoTErrorUnauthorized, AWSIoTErrorServiceUnavailable, AWSIoTErrorInternalFailure.</Abstract></ReturnValue>
+			<Anchor>//api/name/detachThingPrincipal:</Anchor>
+            <NodeRef refid="730"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSIoT/getLoggingOptions:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Gets the logging options.&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSIoTService.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTGetLoggingOptionsRequest</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTGetLoggingOptionsResponse</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (AWSTask *)getLoggingOptions:(AWSIoTGetLoggingOptionsRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">A container for the necessary parameters to execute the GetLoggingOptions service method.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An instance of AWSTask. On successful execution, task.result will contain an instance of AWSIoTGetLoggingOptionsResponse. On failed execution, task.error may contain an NSError with AWSIoTErrorDomain domain and the following error code: AWSIoTErrorInternal, AWSIoTErrorInvalidRequest, AWSIoTErrorServiceUnavailable.</Abstract></ReturnValue>
+			<Anchor>//api/name/getLoggingOptions:</Anchor>
+            <NodeRef refid="730"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSIoT/getPolicy:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Gets information about the specified policy with the policy document of the default version.&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSIoTService.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTGetPolicyRequest</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTGetPolicyResponse</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (AWSTask *)getPolicy:(AWSIoTGetPolicyRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">A container for the necessary parameters to execute the GetPolicy service method.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An instance of AWSTask. On successful execution, task.result will contain an instance of AWSIoTGetPolicyResponse. On failed execution, task.error may contain an NSError with AWSIoTErrorDomain domain and the following error code: AWSIoTErrorResourceNotFound, AWSIoTErrorInvalidRequest, AWSIoTErrorThrottling, AWSIoTErrorUnauthorized, AWSIoTErrorServiceUnavailable, AWSIoTErrorInternalFailure.</Abstract></ReturnValue>
+			<Anchor>//api/name/getPolicy:</Anchor>
+            <NodeRef refid="730"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSIoT/getPolicyVersion:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Gets information about the specified policy version.&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSIoTService.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTGetPolicyVersionRequest</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTGetPolicyVersionResponse</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (AWSTask *)getPolicyVersion:(AWSIoTGetPolicyVersionRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">A container for the necessary parameters to execute the GetPolicyVersion service method.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An instance of AWSTask. On successful execution, task.result will contain an instance of AWSIoTGetPolicyVersionResponse. On failed execution, task.error may contain an NSError with AWSIoTErrorDomain domain and the following error code: AWSIoTErrorResourceNotFound, AWSIoTErrorInvalidRequest, AWSIoTErrorThrottling, AWSIoTErrorUnauthorized, AWSIoTErrorServiceUnavailable, AWSIoTErrorInternalFailure.</Abstract></ReturnValue>
+			<Anchor>//api/name/getPolicyVersion:</Anchor>
+            <NodeRef refid="730"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSIoT/getTopicRule:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Gets information about the specified rule.&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSIoTService.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTGetTopicRuleRequest</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTGetTopicRuleResponse</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (AWSTask *)getTopicRule:(AWSIoTGetTopicRuleRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">A container for the necessary parameters to execute the GetTopicRule service method.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An instance of AWSTask. On successful execution, task.result will contain an instance of AWSIoTGetTopicRuleResponse. On failed execution, task.error may contain an NSError with AWSIoTErrorDomain domain and the following error code: AWSIoTErrorInternal, AWSIoTErrorInvalidRequest, AWSIoTErrorServiceUnavailable, AWSIoTErrorUnauthorized.</Abstract></ReturnValue>
+			<Anchor>//api/name/getTopicRule:</Anchor>
+            <NodeRef refid="730"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSIoT/listCertificates:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Lists your certificates.&lt;/p&gt;&lt;p&gt;The results are paginated with a default page size of 25. You can retrieve additional results using the returned marker.&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSIoTService.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTListCertificatesRequest</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTListCertificatesResponse</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (AWSTask *)listCertificates:(AWSIoTListCertificatesRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">A container for the necessary parameters to execute the ListCertificates service method.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An instance of AWSTask. On successful execution, task.result will contain an instance of AWSIoTListCertificatesResponse. On failed execution, task.error may contain an NSError with AWSIoTErrorDomain domain and the following error code: AWSIoTErrorInvalidRequest, AWSIoTErrorThrottling, AWSIoTErrorUnauthorized, AWSIoTErrorServiceUnavailable, AWSIoTErrorInternalFailure.</Abstract></ReturnValue>
+			<Anchor>//api/name/listCertificates:</Anchor>
+            <NodeRef refid="730"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSIoT/listPolicies:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Lists your policies.&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSIoTService.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTListPoliciesRequest</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTListPoliciesResponse</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (AWSTask *)listPolicies:(AWSIoTListPoliciesRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">A container for the necessary parameters to execute the ListPolicies service method.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An instance of AWSTask. On successful execution, task.result will contain an instance of AWSIoTListPoliciesResponse. On failed execution, task.error may contain an NSError with AWSIoTErrorDomain domain and the following error code: AWSIoTErrorInvalidRequest, AWSIoTErrorThrottling, AWSIoTErrorUnauthorized, AWSIoTErrorServiceUnavailable, AWSIoTErrorInternalFailure.</Abstract></ReturnValue>
+			<Anchor>//api/name/listPolicies:</Anchor>
+            <NodeRef refid="730"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSIoT/listPolicyVersions:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Lists the versions of the specified policy, and identifies the default version.&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSIoTService.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTListPolicyVersionsRequest</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTListPolicyVersionsResponse</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (AWSTask *)listPolicyVersions:(AWSIoTListPolicyVersionsRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">A container for the necessary parameters to execute the ListPolicyVersions service method.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An instance of AWSTask. On successful execution, task.result will contain an instance of AWSIoTListPolicyVersionsResponse. On failed execution, task.error may contain an NSError with AWSIoTErrorDomain domain and the following error code: AWSIoTErrorResourceNotFound, AWSIoTErrorInvalidRequest, AWSIoTErrorThrottling, AWSIoTErrorUnauthorized, AWSIoTErrorServiceUnavailable, AWSIoTErrorInternalFailure.</Abstract></ReturnValue>
+			<Anchor>//api/name/listPolicyVersions:</Anchor>
+            <NodeRef refid="730"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSIoT/listPrincipalPolicies:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Lists the policies attached to the specified principal. If you use an Amazon Cognito identity, the ID needs to be in Amazon Cognito Identity format.&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSIoTService.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTListPrincipalPoliciesRequest</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTListPrincipalPoliciesResponse</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (AWSTask *)listPrincipalPolicies:(AWSIoTListPrincipalPoliciesRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">A container for the necessary parameters to execute the ListPrincipalPolicies service method.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An instance of AWSTask. On successful execution, task.result will contain an instance of AWSIoTListPrincipalPoliciesResponse. On failed execution, task.error may contain an NSError with AWSIoTErrorDomain domain and the following error code: AWSIoTErrorResourceNotFound, AWSIoTErrorInvalidRequest, AWSIoTErrorThrottling, AWSIoTErrorUnauthorized, AWSIoTErrorServiceUnavailable, AWSIoTErrorInternalFailure.</Abstract></ReturnValue>
+			<Anchor>//api/name/listPrincipalPolicies:</Anchor>
+            <NodeRef refid="730"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSIoT/listPrincipalThings:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Lists the things associated with the specified principal.&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSIoTService.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTListPrincipalThingsRequest</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTListPrincipalThingsResponse</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (AWSTask *)listPrincipalThings:(AWSIoTListPrincipalThingsRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">A container for the necessary parameters to execute the ListPrincipalThings service method.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An instance of AWSTask. On successful execution, task.result will contain an instance of AWSIoTListPrincipalThingsResponse. On failed execution, task.error may contain an NSError with AWSIoTErrorDomain domain and the following error code: AWSIoTErrorInvalidRequest, AWSIoTErrorThrottling, AWSIoTErrorUnauthorized, AWSIoTErrorServiceUnavailable, AWSIoTErrorInternalFailure.</Abstract></ReturnValue>
+			<Anchor>//api/name/listPrincipalThings:</Anchor>
+            <NodeRef refid="730"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSIoT/listThingPrincipals:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Lists the principals associated with the specified thing.&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSIoTService.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTListThingPrincipalsRequest</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTListThingPrincipalsResponse</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (AWSTask *)listThingPrincipals:(AWSIoTListThingPrincipalsRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">A container for the necessary parameters to execute the ListThingPrincipals service method.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An instance of AWSTask. On successful execution, task.result will contain an instance of AWSIoTListThingPrincipalsResponse. On failed execution, task.error may contain an NSError with AWSIoTErrorDomain domain and the following error code: AWSIoTErrorInvalidRequest, AWSIoTErrorThrottling, AWSIoTErrorUnauthorized, AWSIoTErrorServiceUnavailable, AWSIoTErrorInternalFailure.</Abstract></ReturnValue>
+			<Anchor>//api/name/listThingPrincipals:</Anchor>
+            <NodeRef refid="730"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSIoT/listThings:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Lists your things. You can pass an AttributeName and/or AttributeValue to filter your things. For example: &quot;ListThings where AttributeName=Color and AttributeValue=Red&quot;&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSIoTService.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTListThingsRequest</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTListThingsResponse</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (AWSTask *)listThings:(AWSIoTListThingsRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">A container for the necessary parameters to execute the ListThings service method.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An instance of AWSTask. On successful execution, task.result will contain an instance of AWSIoTListThingsResponse. On failed execution, task.error may contain an NSError with AWSIoTErrorDomain domain and the following error code: AWSIoTErrorInvalidRequest, AWSIoTErrorThrottling, AWSIoTErrorUnauthorized, AWSIoTErrorServiceUnavailable, AWSIoTErrorInternalFailure.</Abstract></ReturnValue>
+			<Anchor>//api/name/listThings:</Anchor>
+            <NodeRef refid="730"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSIoT/listTopicRules:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Lists the rules for the specific topic.&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSIoTService.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTListTopicRulesRequest</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTListTopicRulesResponse</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (AWSTask *)listTopicRules:(AWSIoTListTopicRulesRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">A container for the necessary parameters to execute the ListTopicRules service method.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An instance of AWSTask. On successful execution, task.result will contain an instance of AWSIoTListTopicRulesResponse. On failed execution, task.error may contain an NSError with AWSIoTErrorDomain domain and the following error code: AWSIoTErrorInternal, AWSIoTErrorInvalidRequest, AWSIoTErrorServiceUnavailable.</Abstract></ReturnValue>
+			<Anchor>//api/name/listTopicRules:</Anchor>
+            <NodeRef refid="730"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSIoT/rejectCertificateTransfer:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Rejects a pending certificate transfer. After AWS IoT rejects a certificate transfer, the certificate status changes from &lt;b&gt;PENDING_TRANFER&lt;/b&gt; to &lt;b&gt;INACTIVE&lt;/b&gt;.&lt;/p&gt;&lt;p&gt;To check for pending certificate transfers, call &lt;a&gt;ListCertificates&lt;/a&gt; to enumerate your certificates.&lt;/p&gt;&lt;p&gt;This operation can only be called by the transfer destination. Once called, the certificate will be returned to the source&apos;s account in the INACTIVE state.&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSIoTService.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTRejectCertificateTransferRequest</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (AWSTask *)rejectCertificateTransfer:(AWSIoTRejectCertificateTransferRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">A container for the necessary parameters to execute the RejectCertificateTransfer service method.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An instance of AWSTask. On successful execution, task.result will be nil. On failed execution, task.error may contain an NSError with AWSIoTErrorDomain domain and the following error code: AWSIoTErrorResourceNotFound, AWSIoTErrorTransferAlreadyCompleted, AWSIoTErrorInvalidRequest, AWSIoTErrorThrottling, AWSIoTErrorUnauthorized, AWSIoTErrorServiceUnavailable, AWSIoTErrorInternalFailure.</Abstract></ReturnValue>
+			<Anchor>//api/name/rejectCertificateTransfer:</Anchor>
+            <NodeRef refid="730"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSIoT/replaceTopicRule:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Replaces the specified rule. You must specify all parameters for the new rule.&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSIoTService.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTReplaceTopicRuleRequest</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (AWSTask *)replaceTopicRule:(AWSIoTReplaceTopicRuleRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">A container for the necessary parameters to execute the ReplaceTopicRule service method.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An instance of AWSTask. On successful execution, task.result will be nil. On failed execution, task.error may contain an NSError with AWSIoTErrorDomain domain and the following error code: AWSIoTErrorSqlParse, AWSIoTErrorInternal, AWSIoTErrorInvalidRequest, AWSIoTErrorServiceUnavailable, AWSIoTErrorUnauthorized.</Abstract></ReturnValue>
+			<Anchor>//api/name/replaceTopicRule:</Anchor>
+            <NodeRef refid="730"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSIoT/setDefaultPolicyVersion:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Sets the specified policy version as the default for the specified policy.&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSIoTService.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTSetDefaultPolicyVersionRequest</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (AWSTask *)setDefaultPolicyVersion:(AWSIoTSetDefaultPolicyVersionRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">A container for the necessary parameters to execute the SetDefaultPolicyVersion service method.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An instance of AWSTask. On successful execution, task.result will be nil. On failed execution, task.error may contain an NSError with AWSIoTErrorDomain domain and the following error code: AWSIoTErrorResourceNotFound, AWSIoTErrorInvalidRequest, AWSIoTErrorThrottling, AWSIoTErrorUnauthorized, AWSIoTErrorServiceUnavailable, AWSIoTErrorInternalFailure.</Abstract></ReturnValue>
+			<Anchor>//api/name/setDefaultPolicyVersion:</Anchor>
+            <NodeRef refid="730"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSIoT/setLoggingOptions:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Sets the logging options.&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSIoTService.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTSetLoggingOptionsRequest</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (AWSTask *)setLoggingOptions:(AWSIoTSetLoggingOptionsRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">A container for the necessary parameters to execute the SetLoggingOptions service method.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An instance of AWSTask. On successful execution, task.result will be nil. On failed execution, task.error may contain an NSError with AWSIoTErrorDomain domain and the following error code: AWSIoTErrorInternal, AWSIoTErrorInvalidRequest, AWSIoTErrorServiceUnavailable.</Abstract></ReturnValue>
+			<Anchor>//api/name/setLoggingOptions:</Anchor>
+            <NodeRef refid="730"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSIoT/transferCertificate:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Transfers the specified certificate to the specified AWS account.&lt;/p&gt;&lt;p&gt;You can cancel the transfer until it is acknowledged by the recipient.&lt;/p&gt;&lt;p&gt;No notification is sent to the transfer destination&apos;s account, it is up to the caller to notify the transfer target.&lt;/p&gt;&lt;p&gt;The certificate being transferred must not be in the ACTIVE state. It can be deactivated using the UpdateCertificate API.&lt;/p&gt;&lt;p&gt;The certificate must not have any policies attached to it. These can be detached using the &lt;a&gt;DetachPrincipalPolicy&lt;/a&gt; API.&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSIoTService.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTTransferCertificateRequest</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTTransferCertificateResponse</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (AWSTask *)transferCertificate:(AWSIoTTransferCertificateRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">A container for the necessary parameters to execute the TransferCertificate service method.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An instance of AWSTask. On successful execution, task.result will contain an instance of AWSIoTTransferCertificateResponse. On failed execution, task.error may contain an NSError with AWSIoTErrorDomain domain and the following error code: AWSIoTErrorInvalidRequest, AWSIoTErrorResourceNotFound, AWSIoTErrorCertificateState, AWSIoTErrorTransferConflict, AWSIoTErrorThrottling, AWSIoTErrorUnauthorized, AWSIoTErrorServiceUnavailable, AWSIoTErrorInternalFailure.</Abstract></ReturnValue>
+			<Anchor>//api/name/transferCertificate:</Anchor>
+            <NodeRef refid="730"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSIoT/updateCertificate:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Updates the status of the specified certificate. This operation is idempotent.&lt;/p&gt;&lt;p&gt;Moving a cert from the ACTIVE state (including REVOKED) will NOT disconnect currently-connected devices, although these devices will be unable to reconnect.&lt;/p&gt;&lt;p&gt;The ACTIVE state is required to authenticate devices connecting to AWS IoT using a certificate.&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSIoTService.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTUpdateCertificateRequest</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (AWSTask *)updateCertificate:(AWSIoTUpdateCertificateRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">A container for the necessary parameters to execute the UpdateCertificate service method.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An instance of AWSTask. On successful execution, task.result will be nil. On failed execution, task.error may contain an NSError with AWSIoTErrorDomain domain and the following error code: AWSIoTErrorResourceNotFound, AWSIoTErrorCertificateState, AWSIoTErrorInvalidRequest, AWSIoTErrorThrottling, AWSIoTErrorUnauthorized, AWSIoTErrorServiceUnavailable, AWSIoTErrorInternalFailure.</Abstract></ReturnValue>
+			<Anchor>//api/name/updateCertificate:</Anchor>
+            <NodeRef refid="730"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSIoT/updateThing:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Updates the data for a thing.&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSIoTService.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTUpdateThingRequest</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSIoTUpdateThingResponse</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (AWSTask *)updateThing:(AWSIoTUpdateThingRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">A container for the necessary parameters to execute the UpdateThing service method.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An instance of AWSTask. On successful execution, task.result will contain an instance of AWSIoTUpdateThingResponse. On failed execution, task.error may contain an NSError with AWSIoTErrorDomain domain and the following error code: AWSIoTErrorInvalidRequest, AWSIoTErrorThrottling, AWSIoTErrorUnauthorized, AWSIoTErrorServiceUnavailable, AWSIoTErrorInternalFailure, AWSIoTErrorResourceNotFound.</Abstract></ReturnValue>
+			<Anchor>//api/name/updateThing:</Anchor>
+            <NodeRef refid="730"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>
